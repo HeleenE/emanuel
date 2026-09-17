@@ -8,14 +8,14 @@
 }
 
 * { box-sizing: border-box; }
-:root { font-family: Arial, Helvetica, sans-serif; color: #17120f; background: #8ace00; }
-body { margin: 0; min-height: 100svh; display: grid; place-items: center; text-shadow: 0px 0px 16px #ffffff5e; }
-.light-field { position: fixed; inset: 0; overflow: hidden; z-index: -1; background: #8ace00; }
+:root { font-family: Arial, Helvetica, sans-serif; color: #fff; background: #080808; }
+body { margin: 0; min-height: 100svh; display: grid; place-items: center; }
+.light-field { position: fixed; inset: 0; overflow: hidden; z-index: -1; background: #080808; }
 .light { position: absolute; width: 115vmax; height: 115vmax; left: calc(50% - 57.5vmax); top: calc(50% - 57.5vmax); will-change: transform; }
 .light-one { background: conic-gradient(from 20deg, transparent 0deg 35deg, #8ace00 80deg, transparent 135deg 205deg, #b2ff00 255deg, transparent 315deg); animation: turn 16s linear infinite; }
 .light-two { background: radial-gradient(ellipse at 28% 36%, #ff5a00 0%, #ff5a00aa 12%, transparent 33%), radial-gradient(ellipse at 75% 70%, #ff7800 0%, transparent 30%); animation: sweep 11s ease-in-out infinite alternate; }
 .light-three { background: radial-gradient(ellipse at 50% 15%, #ff007f 0%, transparent 27%), radial-gradient(ellipse at 45% 88%, #d9006c 0%, transparent 25%); animation: breathe 9s ease-in-out infinite alternate; }
-.diffuser { position: absolute; inset: 0; backdrop-filter: blur(38px); background: transparent; }
+.diffuser { position: absolute; inset: 0; backdrop-filter: blur(38px); background: radial-gradient(ellipse at center, #000c 0%, #000a 45%, #0006 100%); }
 main { min-width: 0; width: 100%; padding: 70px 24px; text-align: center; }
 section { margin-bottom: 10px; }
 h1 { text-transform: uppercase; font-family: "Anybody", Arial, sans-serif; margin: 0; font-size: clamp(42px, 7.8vw, 120px); line-height: 1.05; font-weight: 700; font-stretch: 125%; font-variation-settings: "wdth" 125; letter-spacing: -0.04em; }
